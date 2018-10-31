@@ -15,11 +15,11 @@ class Song
 
   attr_accessor :name, :artist, :genre
 
-  def count
+  def self.count
     @@count
   end
 
-  def genres
+  def self.genres
     gens = []
     @@genres.each do |gen|
       gen << gens if gens.include?(gen) == false
@@ -27,7 +27,7 @@ class Song
     gens
   end
 
-  def artists
+  def self.artists
     arts = []
     @@artists.each do |art|
       art << arts if arts.include?(art) == false
@@ -35,7 +35,7 @@ class Song
     arts
   end
 
-  def genre_count
+  def self.genre_count
       genre_count = {}
 
       @@genres.each do |gen|
