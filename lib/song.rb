@@ -22,7 +22,7 @@ class Song
   def self.genres
     gens = []
     @@genres.each do |gen|
-      gen << gens if gens.include?(gen) == false
+      gens << gen if gens.include?(gen) == false
     end
     gens
   end
@@ -30,7 +30,7 @@ class Song
   def self.artists
     arts = []
     @@artists.each do |art|
-      art << arts if arts.include?(art) == false
+      arts << art if arts.include?(art) == false
     end
     arts
   end
