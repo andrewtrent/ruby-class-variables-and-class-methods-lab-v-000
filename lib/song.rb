@@ -44,5 +44,6 @@ class Song
         genre_hash[gen] += 1
       end
     end
+    genre_hash
   end
 end
