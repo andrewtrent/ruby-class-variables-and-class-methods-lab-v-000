@@ -42,5 +42,5 @@ class Song
     genre_count[e] = genre_count[e] + 1
   end
 
-  puts m
+  puts genre_count
 end
