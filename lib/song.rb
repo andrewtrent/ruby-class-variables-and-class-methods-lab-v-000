@@ -34,4 +34,13 @@ class Song
     end
     arts
   end
+
+  def genre_count
+    genre_count = {}
+
+    @@genres.each do |gen|
+    genre_count[e] = genre_count[e] + 1
+  end
+
+  puts m
 end
